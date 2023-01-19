@@ -2,7 +2,7 @@ const stripeAPI = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const createCheckoutSession = async (req, res) => {
   const { items, customer_email } = req.body;
-  const client_url = "http://localhost:3000";
+  const client_url = "https://shoppingmart-3ghv.onrender.com";
 
   if (!items || !customer_email) {
     return res.status(400).json({
