@@ -93,7 +93,7 @@ const createCheckoutSession = async (req, res) => {
           quantity: productItem.quantity,
         };
       }),
-      success_url: `${client_url}/success?session_id={CHECTOUT_SESSION_ID}`,
+      success_url: `${client_url}/success`,
       cancel_url: `${client_url}/cancel`,
     }); // session logic
 
